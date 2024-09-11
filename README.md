@@ -4,7 +4,7 @@ The contents of this project is largely inspired by this [blog post](https://boo
 
 I found that I have been reusing this component every time I need to display some text along with the spinner, and I thought, why not make it into a reusable component?
 
-![How it looks.png](assets/imgs/How it looks.png)
+![example.png](example.png)
 
 I have included a `parentComponent` lwc to illustrate how this component could be use as a child component across all your LWCs.
 You would almost always want to wrap it in a container that has relative position, something like:
