@@ -1,0 +1,32 @@
+.slds-spinner-text {
+    width: 320px;
+    text-align: center;
+}
+.slds-spinner_xx-small .slds-spinner-text {
+    font-size: 0.45rem;
+    transform: translate(-44%, -50%) rotate(-90deg);
+}
+.slds-spinner_x-small .slds-spinner-text {
+    font-size: 0.60rem;
+    transform: translate(-40%, -50%) rotate(-90deg);
+}
+.slds-spinner_small .slds-spinner-text {
+    font-size: 0.75rem;
+    transform: translate(-36%, -50%) rotate(-90deg);
+}
+.slds-spinner_medium .slds-spinner-text {
+    font-size: 0.9rem;
+    transform: translate(-32%, -50%) rotate(-90deg);
+}
+.slds-spinner_large .slds-spinner-text {
+    font-size: 1rem;
+    transform: translate(-26%, -50%) rotate(-90deg);
+}
+
+.slds-spinner_inverse .slds-spinner-text {
+    color: var(--slds-g-color-neutral-base-100, var(--lwc-colorBackgroundAlt,rgb(255, 255, 255)));
+}
+
+.slds-spinner_brand .slds-spinner-text {
+    color: var(--lwc-brandPrimary,rgba(65, 148, 249, 1))
+}

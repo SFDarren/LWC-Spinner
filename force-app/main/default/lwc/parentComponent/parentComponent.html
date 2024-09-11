@@ -1,0 +1,27 @@
+<template>
+    <lightning-layout horizontal-align="spread" multiple-rows>
+        <template for:each={combinations} for:item="combination">
+            <template lwc:if={combination.isInverse}>
+                <lightning-layout-item key={combination.i} size="4" class="slds-is-relative"
+                    style="background-color: darkblue; height: 300px;">
+                    <c-spinner 
+                        variant={combination.variant} 
+                        size={combination.size} 
+                        text={combination.text}
+                        text-style-override={combination.textStyleOverride}
+                    ></c-spinner>
+                </lightning-layout-item>
+            </template>
+            <template lwc:else>
+                <lightning-layout-item key={combination.i} size="4" class="slds-is-relative"
+                    style="height: 300px;">
+                    <c-spinner 
+                        variant={combination.variant} 
+                        size={combination.size} 
+                        text={combination.text}
+                    ></c-spinner>
+                </lightning-layout-item>
+            </template>
+        </template>
+    </lightning-layout>
+</template>
